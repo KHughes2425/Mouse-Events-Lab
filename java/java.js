@@ -1,7 +1,8 @@
 
 
-const click  = document.querySelector('.demo');
+const demo  = document.querySelector('.demo');
 const point = document.querySelector('#point');
+
 
 
 demo.addEventListener('mousedown', (e) => {
