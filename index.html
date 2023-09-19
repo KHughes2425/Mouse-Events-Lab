@@ -12,9 +12,17 @@
 
     <main>
         <h2>Here is an example of when HTML allows handler attributes:</h2>
-        <button onclick="document.getElementById('demo').innerHTML=Date()">This button will tell you what time it is!</button>
+        <button onmouseover="document.getElementById('demo').innerHTML=Date()">This button will tell you what time it is!</button>
         <p id="demo"></p>
         <p>This event updates everytime you click it! Cool Right?!</p>
+
+        <div class="click">
+            <h3>
+                Did you know that I can tell where you click in this box?
+            </h3>
+            <h3 id="point">0, 0</h3>
+            <p>Check the console for more info</p>
+        </div>
     </main>
 </body>
 </html>
