@@ -13,7 +13,7 @@
 
     <main>
         <h2>Here is an example of when HTML allows handler attributes:</h2>
-        <button onmouseover="document.getElementById('demo').innerHTML=Date()">This button will tell you what time it is!</button>
+        <button onclick="this.innerHTML=Date()">This button will tell you what time it is!</button>
         <p id="demo"></p>
         <p>This event updates everytime you click it! Cool Right?!</p>
 
