@@ -6,6 +6,7 @@ body{
     background-color: rgb(0, 0, 0);
     margin: 0;
     height: 100vh;
+    background-image:url(/img/christian-wiediger-2D-NFPeTsQw-unsplash.jpg);
 }
 
 .ball {
@@ -69,13 +70,20 @@ a{
 
 #myDiv{
     margin: 0 auto;
-    margin-top:30%;
+    
 
     
 }
 
 img{
-    width:100px;
-    height:100px;
-    margin-left: 13.5rem
+    width:300px;
+    height:300px;
+
+}
+
+.orb{
+    margin-right:auto;
+    margin-left:auto;
+    display:block;
+    text-align: center;
 }
