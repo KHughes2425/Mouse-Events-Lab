@@ -9,7 +9,7 @@ body {
     height:100%;
     padding:0;
     box-sizing: border-box;
-    background-image: url(/img/christian-wiediger-2D-NFPeTsQw-unsplash.jpg);
+    background-color: rgb(255, 140, 171);
   }
 
 .demo{
@@ -17,7 +17,7 @@ body {
     height:50%;
     margin: 2rem auto;
     padding: 2rem;
-    background: hsla(313, 100%, 53%, 0.5);
+    background: hsla(341, 100%, 50%, 0.495);
 }
 
 .ball {
@@ -30,11 +30,15 @@ body {
 
 p {
     margin-top: 8rem;
+    margin-bottom:20rem;
     text-align: center;
-    font-size:2rem;
+    font-size:3rem;
     color:snow;
     font-family: 'Leckerli One';
     font-weight:normal;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+
 
 }
 
