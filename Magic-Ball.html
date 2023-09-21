@@ -17,21 +17,17 @@
 </head>
 
 <body>
-    <h1>Welcome to the Magic Ball!</h1>
     
-    
-    <div id="ball"><img src="img/orb.png" alt=""></div>
-    <p>Tap <span>Anywhere</span> on the screen! </p>
+        <div id="dot" class="ball"><img src="img/orb.png" alt="orb"></div>
+        <p>Click anywhere on the screen!</p>
 
-    <script>
-         const ball = document.getElementById('ball');
-        document.body.addEventListener('click', (e) => {
-            ball.style.transform = `translateY(${e.clientY - 0}px)`;
-            ball.style.transform += `translateX(${e.clientX - 0}px)`;
-            ball.style.opacity = 1;
-        }, false);
-        
-    </script>
+        <div class="demo">
+            <h2>Wanna see something cool?</h2>
+            <h3>Click anywhere in his box to see where you've clicked!</h3>
+            <h3 id="point">0, 0</h3>
+        </div>
+    
+    <script src="java/java.js"></script>
 </body>
 
 </html>

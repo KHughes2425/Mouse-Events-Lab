@@ -1,88 +1,40 @@
 *{
-    box-sizing: border-box;
     padding:0;
     margin:0;
+    box-sizing: border-box;
 }
 
-body{
-    background-color: rgb(0, 0, 0);
-    margin:0;
-    height:100vh;
-    background-image:url(/img/christian-wiediger-2D-NFPeTsQw-unsplash.jpg);
+body {
+    width: 100%;
+    height:100%;
+    padding:0;
+    box-sizing: border-box;
+    background-image: url(/img/christian-wiediger-2D-NFPeTsQw-unsplash.jpg);
+  }
 
-
+.demo{
+    width: 50%;
+    height:50%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: hsla(313, 100%, 53%, 0.5);
 }
 
-main{
-    background-image:url(/img/mathew-schwartz-UFqKI4QWd2k-unsplash.jpg);
-    filter: brightness(50%);
-}
-
-
-html{
-    height: 100%;
-    width: 100vw;
-    margin: 0;
-    animation-name: blur;
-    animation-duration: 1s;
-    animation-fill-mode: backwards;
-}
-@keyframes blur {
-    from {
-        filter:fade(100px);
-        opacity: 0;
-    }
-    to {
-        filter: fade(0);
-        opacity: 1;
-    }
-}
-@keyframes fade {
-    0%,
-    50% {
-        transform: translateY(-20px);
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-#ball {
-    
-    background: rgba(0, 204, 61, 0);
+.ball {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
     opacity: 0;
     transition: transform 1s;
-    width:100%;
-    
 }
-
-
 
 p {
-    margin-top: 5rem;
-    color:white;
+    margin-top: 8rem;
     text-align: center;
-    color:antiquewhite;
-    -webkit-text-stroke-width: .001px;
-    -webkit-text-stroke-color: #696767;
-    font-family: 'Leckerli One', cursive;
-    font-size:3rem;
-
-    
-    
-}
-
-h1{
-    text-align:center;
-    font-weight:bolder;
-    font-size:4rem;
-    color:rgb(255, 255, 255);
-    -webkit-text-stroke-width: .001px;
-    -webkit-text-stroke-color: #696767;
-    font-family: 'Leckerli One', cursive;
+    font-size:2rem;
+    color:snow;
+    font-family: 'Leckerli One';
+    font-weight:normal;
 
 }
 
@@ -91,6 +43,41 @@ img{
     height:100px;
 }
 
-a{
-    color:pink;
+
+h1{
+    text-align:center;
+    color:snow;
+    font-family: 'Leckerli One';
+    margin-top:20px;
+    font-size:5.4rem;
+    
+}
+
+h2{
+    text-align: center;
+    font-size: 3rem;
+    color:snow;
+    font-family: 'Leckerli One';
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+
+    
+}
+
+h3{
+    text-align: center;
+    font-family: 'Leckerli One';
+    color:bisque;
+    padding-top:10px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-weight: normal;
+    font-size: 2rem;
+
+
+}
+
+#h3{
+    color:snow;
+    font-size:1rem;
 }
