@@ -98,6 +98,7 @@ p {
     -webkit-text-stroke-color: #000000;
     
 }
+
 h1{
     text-align:center;
     color:antiquewhite;
@@ -106,5 +107,10 @@ h1{
     -webkit-text-stroke-color: #000000;
     font-family: 'Parisienne', cursive;
 
+}
+
+img{
+    width:100px;
+    height:100px;
 }
 
