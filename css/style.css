@@ -43,6 +43,10 @@ h1{
 
 }
 
+h2{
+    color:aliceblue;
+}
+
 #demo{
     font-size:5rem;
     margin-right: 50%;
@@ -57,4 +61,15 @@ h1{
     margin: auto;
     border: 10px groove rgb(19, 242, 171);
     padding-bottom:10px;
+}
+
+a{
+    
+}
+
+#myDiv{
+    margin: 0 auto;
+    margin-top:30%;
+
+    
 }
