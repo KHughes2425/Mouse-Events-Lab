@@ -1,34 +1,39 @@
 *{
     box-sizing: border-box;
     padding:0;
+    margin:0;
 }
 
 body{
-    background-color: purple;
+    background-color: rgb(0, 0, 0);
     margin:0;
     height:100vh;
     background-image:url(/img/christian-wiediger-2D-NFPeTsQw-unsplash.jpg);
 
+
+}
+
+main{
+    background-image:url(/img/mathew-schwartz-UFqKI4QWd2k-unsplash.jpg);
+    filter: brightness(50%);
 }
 
 
 html{
-    position: absolute;
     height: 100%;
-    width: 100%;
+    width: 100vw;
     margin: 0;
-    background: #1a0048 url(bg.jpg) no-repeat center/cover;
     animation-name: blur;
     animation-duration: 1s;
     animation-fill-mode: backwards;
 }
 @keyframes blur {
     from {
-        filter:blur(52px);
+        filter:fade(100px);
         opacity: 0;
     }
     to {
-        filter: blur(0);
+        filter: fade(0);
         opacity: 1;
     }
 }
@@ -45,33 +50,39 @@ html{
 }
 
 
-.ball {
-    border: 2px solid black;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    background: rgb(0, 204, 61);
+#ball {
+    
+    background: rgba(0, 204, 61, 0);
     opacity: 0;
     transition: transform 1s;
+    width:100%;
+    
 }
 
+
+
 p {
-    margin-top: 10rem;
+    margin-top: 5rem;
     color:white;
     text-align: center;
-    font: bold 2rem sans-serif;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #000000;
+    color:antiquewhite;
+    -webkit-text-stroke-width: .001px;
+    -webkit-text-stroke-color: #696767;
+    font-family: 'Leckerli One', cursive;
+    font-size:3rem;
+
+    
     
 }
 
 h1{
     text-align:center;
-    color:antiquewhite;
-    text-shadow: 5px 9px 10px black;
-    -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color: #000000;
-    font-family: 'Parisienne', cursive;
+    font-weight:bolder;
+    font-size:4rem;
+    color:rgb(255, 255, 255);
+    -webkit-text-stroke-width: .001px;
+    -webkit-text-stroke-color: #696767;
+    font-family: 'Leckerli One', cursive;
 
 }
 
@@ -80,3 +91,6 @@ img{
     height:100px;
 }
 
+a{
+    color:pink;
+}

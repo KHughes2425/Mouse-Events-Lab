@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
 
     <title>Transform - Transition - Event.clientX/Y</title>
 </head>
@@ -17,16 +20,16 @@
     <h1>Welcome to the Magic Ball!</h1>
     
     
-    <div id="dot" class="ball"></div>
+    <div id="ball"><img src="img/orb.png" alt=""></div>
     <p>Tap <span>Anywhere</span> on the screen! </p>
     <p><a href="index.html">Go back home!</a></p>
 
     <script>
-         const dot = document.getElementById('dot');
+         const ball = document.getElementById('ball');
         document.body.addEventListener('click', (e) => {
-            dot.style.transform = `translateY(${e.clientY - 25}px)`;
-            dot.style.transform += `translateX(${e.clientX - 25}px)`;
-            dot.style.opacity = 1;
+            ball.style.transform = `translateY(${e.clientY - 0}px)`;
+            ball.style.transform += `translateX(${e.clientX - 0}px)`;
+            ball.style.opacity = 1;
         }, false);
         
     </script>
