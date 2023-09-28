@@ -24,3 +24,26 @@ console.log("Screen: " , e.screenX , e.screenY)
 console.log("Event Object: ", e);
 });
 
+let btn = document.querySelector('#btn');
+
+btn.addEventListener('contextmenu', (e) =>{
+    e.preventDefault();
+});
+
+btn.addEventListener('mouseup', (e) => {
+    let msg = document.querySelector('#message');
+    switch (e.button) {
+        case 0:
+            msg.textContent = 'Left mouse button was clicked!';
+            break;
+        case 1:
+            msg.textContent= 'Middle mouse Button was clicked!';
+            break;
+        case 2:
+            msg.textContent= 'Right Mouse Button was clicked!'
+            break;
+        default:
+            msg.textContent= 'Hm This isnt a mouse key. Try clicking the mouse';
+            
+    }
+})

@@ -20,10 +20,10 @@
 
 
 <body>
+    <button id="btn">Click using the Left, Right or Middle Button!</button>
+    <p id="message"></p>
 
 
-        <div id="dot" class="ball"></div>
-        <p>Click anywhere on the screen!</p>
 
 
         <div class="demo">
@@ -32,7 +32,7 @@
             <h3 id="point">0, 0</h3>
         </div>
    
-    <script>
+    <script src="java/java.js">
       var dot = document.getElementById('dot');
         document.body.addEventListener('click', (e) => {
             dot.style.transform = `translateY(${e.clientY - 25}px)`;
